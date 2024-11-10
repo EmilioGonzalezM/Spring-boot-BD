@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tablas Películas</title>
+</head>
+<body>
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th colspan="6">Movies</th>
+          </tr>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+         <!-- <tr>
+            <td>1</td>
+            <td>Atualizar página da equipe</td>
+            <td>
+              <i class="material-icons button edit">edit</i>
+              <i class="material-icons button delete">delete</i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Design da nova marca</td>
+            <td>
+              <i class="material-icons button edit">edit</i>
+              <i class="material-icons button delete">delete</i>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Encontrar desenvolvedor front-end</td>
+            <td>
+              <i class="material-icons button edit">edit</i>
+              <i class="material-icons button delete">delete</i>
+            </td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+    <div id="formulario">
+      <h1>Modificar Películas</h1>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form method="POST">
+          <!--<form action="https://formbold.com/s/FORM_ID" method="POST"> -->
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="Title"
+                    id="title"
+                    placeholder="Avatar"
+                    class="formbold-form-input"
+                    />
+                    <label for="Title" class="formbold-form-label"> Title </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="Director"
+                    id="director"
+                    placeholder="Emilio"
+                    class="formbold-form-input"
+                    />
+                    <label for="Director" class="formbold-form-label"> Director </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="Genre"
+                    id="genre"
+                    placeholder="Drama"
+                    class="formbold-form-input"
+                    />
+                    <label for="Genre" class="formbold-form-label"> Genre </label>
+                </div>
+              </div>
+      
+              <button type="submit" id="btnModificar" class="formbold-btn"> 
+                <!--type submit, puedes presionar enter y se ejecutara automaticamente,pero debes de usar evento.preventDefault(); en JavaScript
+                con type button, de ley tienes que precionar el botón pero NO se necesita agregar el evento.preventDefault();-->
+                Modificar
+              </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="tabla.js"> </script>
+</body>
+</html>

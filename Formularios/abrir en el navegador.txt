@@ -1,0 +1,9 @@
+Formulario
+http://127.0.0.1:5500/Formulario.html
+
+Tabla de datos
+http://127.0.0.1:5500/tabla.html
+
+visualizacion de datos Json
+http://localhost:8080/api/movies
+

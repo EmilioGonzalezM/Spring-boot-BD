@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+  <h1>Registro de Películas</h1>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form method="POST">
+          <!--<form action="https://formbold.com/s/FORM_ID" method="POST"> -->
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="Title"
+                    id="title"
+                    placeholder="Avatar"
+                    class="formbold-form-input"
+                    />
+                    <label for="Title" class="formbold-form-label"> Title </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="Director"
+                    id="director"
+                    placeholder="Emilio"
+                    class="formbold-form-input"
+                    />
+                    <label for="Director" class="formbold-form-label"> Director </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="Genre"
+                    id="genre"
+                    placeholder="Drama"
+                    class="formbold-form-input"
+                    />
+                    <label for="Genre" class="formbold-form-label"> Genre </label>
+                </div>
+              </div>
+      
+              <button type="submit" id="btnRegistrar" class="formbold-btn"> 
+                <!--type submit, puedes presionar enter y se ejecutara automaticamente,pero debes de usar evento.preventDefault(); en JavaScript
+                con type button, de ley tienes que precionar el botón pero NO se necesita agregar el evento.preventDefault();-->
+                Registrar
+              </button>
+          </form>
+        </div>
+      </div>
+    <script src="Formulario.js"></script>
+</body>
+</html>
